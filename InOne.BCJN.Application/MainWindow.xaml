@@ -1,0 +1,64 @@
+﻿<Window x:Class="InOne.BCJN.AppWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu Height="35" 
+              VerticalAlignment="Top"
+              Background="Aqua"
+              FontSize="25"
+              FontStyle="Italic" Grid.RowSpan="2">
+            <MenuItem Header="Read">
+                <MenuItem Header="Book" ></MenuItem>
+                <MenuItem Header="Copybook" ></MenuItem>
+                <MenuItem Header="Journal" ></MenuItem>
+                <MenuItem Header="Notebbok" ></MenuItem>
+                <Separator />
+            </MenuItem>
+            <MenuItem Header="Write">
+                <MenuItem Header="Copybook" ></MenuItem>
+                <MenuItem Header="Notebbok" ></MenuItem>
+                <Separator />
+            </MenuItem>
+            
+            <MenuItem Header="Exit"
+                      Margin="0,0,0,0" Click="MenuItemExit_Click">
+            </MenuItem>
+        </Menu>
+        <Label Height="379" VerticalAlignment="Bottom" Grid.Row="1">
+            <RichTextBox
+                    x:Name="MyText"
+                Width="780"
+                Height="350">
+            </RichTextBox>
+        </Label>
+        <StackPanel 
+                    Height="25"
+                    VerticalAlignment="Bottom"
+                    Orientation="Horizontal">
+            <Label 
+                   Padding="-5" 
+                   Content="Save as..."
+                   Width="90"
+                   FontSize="18">
+            </Label>
+            <TextBox
+                Width="150"
+                Height="25"
+                Background="Aqua"
+                FontSize="18"
+                x:Name="TextSave"
+                >
+            </TextBox>
+            <Button
+                Width="60"
+                Content="Save"
+                FontSize="18"
+                Padding="-5"
+                Click="MenuItemSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

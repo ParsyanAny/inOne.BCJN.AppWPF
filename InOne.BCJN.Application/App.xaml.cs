@@ -1,0 +1,9 @@
+﻿namespace InOne.BCJN.AppWPF
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App
+    {
+    }
+}
