@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using InOne.BCJN.Application.BCJN;
 
 namespace InOne.BCJN.AppWPF
 {
-    class Journal : Book
+    class Journal : Paper
     {
         
     }
