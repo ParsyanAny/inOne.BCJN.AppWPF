@@ -8,6 +8,6 @@ namespace InOne.BCJN.Application.BCJN
 {
     public interface IWritable
     {
-        void static Save(string fileName);
+        void Saveas(string oldName, string content);
     }
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InOne.BCJN.Application.BCJN
+namespace Test
 {
-    public interface IReadable
+    public class Class1
     {
-         string Read();
     }
 }

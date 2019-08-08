@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InOne.BCJN.Application.BCJN
+namespace HowISeeAbstruction.BCJN
 {
-    public interface IReadable
+    interface IWriteable
     {
-         string Read();
+        bool Write();
     }
 }

@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InOne.BCJN.Application.BCJN
+namespace HowISeeAbstruction
 {
-    public interface IReadable
+    class Program
     {
-         string Read();
+        static void Main(string[] args)
+        {
+        }
     }
 }

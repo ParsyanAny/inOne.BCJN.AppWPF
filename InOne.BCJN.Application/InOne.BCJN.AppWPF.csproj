@@ -68,7 +68,7 @@
     <Compile Include="BCJN\IReadable.cs" />
     <Compile Include="BCJN\IWritable.cs" />
     <Compile Include="BCJN\Journal.cs" />
-    <Compile Include="BCJN\Paper.cs" />
+    <Compile Include="BCJN\Papers.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -100,6 +100,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

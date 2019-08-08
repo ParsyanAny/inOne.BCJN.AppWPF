@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace InOne.BCJN.AppWPF
 {
-    public abstract class NoteBook : Paper
+    public class NoteBook : CopyBook, IReadable, IWritable
     {
-        
+        public override int PageCount()
+        {
+            return WordCount / 250;
+        }
     }
 }

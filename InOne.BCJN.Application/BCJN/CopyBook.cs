@@ -1,25 +1,34 @@
 ﻿using InOne.BCJN.Application.BCJN;
+using Microsoft.Win32;
 using System;
+using System.IO;
+using System.Windows.Documents;
 
 namespace InOne.BCJN.AppWPF
 {
-    class CopyBook : NoteBook, IWritable
+    public class CopyBook :  Paper, IWritable, IReadable
     {
-        public static void Save(string a)
+        public override int PageCount()
         {
-            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
-            dlg.FileName = a;
-            dlg.DefaultExt = ".txt";
-            dlg.Filter = "TXT files|*.text";
+            return WordCount / 150;
+        }
+        public void Saveas(string fName, string content)
+        {
+            SaveFileDialog dlg = new SaveFileDialog
+            {
+                FileName = fName,
+                DefaultExt = ".txt",
+                Filter = filter
+            };
 
-            // Show save file dialog box
-            Nullable<bool> result = dlg.ShowDialog();
+            bool? result = dlg.ShowDialog();
 
-            // Process save file dialog box results
             if (result == true)
             {
-                // Save document
                 string filename = dlg.FileName;
+
+                File.WriteAllText(filename, content);
+
             }
         }
     }
