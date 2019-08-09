@@ -4,9 +4,6 @@ namespace InOne.BCJN.AppWPF
 {
     public class Book : Paper, IReadable
     {
-        public override int PageCount()
-        {
-            return WordCount / 500;
-        }
+        public override int PageCount() => WordCount / 500;
     }
 }

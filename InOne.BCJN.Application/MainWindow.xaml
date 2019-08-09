@@ -5,7 +5,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="ReadWrite" Height="450" Width="800"
+        Title="ReadWrite" 
+        Height="450" Width="800"
         x:Name="MyMainWindow">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -17,8 +18,8 @@
 
         </Grid.RowDefinitions>
         <Menu 
-            Grid.Row="0"
-            x:Name="MyMenu"
+              Grid.Row="0"
+              x:Name="MyMenu"
               FontSize="25"
               FontStyle="Italic">
             <MenuItem Header="Read" 
@@ -26,13 +27,13 @@
                 <MenuItem Header="Book" Name="openBook" Click="OpenBook_Click" ></MenuItem>
                 <MenuItem Header="Copybook" x:Name="openCopyBook" Click="OpenCopyBook_Click" ></MenuItem>
                 <MenuItem Header="Journal" x:Name="openJournal" Click="OpenJournal_Click" ></MenuItem>
-                <MenuItem Header="Notebbok" x:Name="openNoteBook" Click="OpenNoteBook_Click" ></MenuItem>
+                <MenuItem Header="Notebook" x:Name="openNoteBook" Click="OpenNoteBook_Click" ></MenuItem>
                 <Separator />
             </MenuItem>
             <MenuItem Header="Write"
                       x:Name="MenuWrite">
                 <MenuItem Header="Copybook" x:Name="writeCopyBook" Click="WriteCopyBook_Click"></MenuItem>
-                <MenuItem Header="Notebbok" x:Name="writeNoteBook" Click="WriteNoteBook_Click"></MenuItem>
+                <MenuItem Header="Notebook" x:Name="writeNoteBook" Click="WriteNoteBook_Click"></MenuItem>
                 <Separator />
             </MenuItem>
             <MenuItem Header="Exit"
@@ -43,43 +44,30 @@
         <RichTextBox
                 Grid.Row="1"
                 x:Name="MyText"
-                FontSize="22 "                
-                FontStyle="Italic" Grid.ColumnSpan="2"
-                 >
+                Grid.ColumnSpan="2">
             <RichTextBox.Background>
                 <ImageBrush x:Name="ImageFor">
                 </ImageBrush>
             </RichTextBox.Background>
         </RichTextBox>
         <Grid
-                    Grid.Row="2"
-                    x:Name="SaveablePart"
-                    >
+               Grid.Row="2"
+               x:Name="SaveablePart">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
-                
             </Grid.ColumnDefinitions>
-            <Label x:Name="pageCount">
-            </Label>
-            <Label 
-                   Grid.Column="1"
-                   x:Name="saveLabel"
-                   Content="Save as..."
-                   FontSize="18"/>
-            <TextBox 
-                Grid.Column="2"
-                x:Name="TextSave"
-                FontSize="18"
-                />
+            <Label x:Name="pageCount"></Label>
             <Button x:Name = "saveButton" 
-                Grid.Column="3"
-                FontSize="18"
-                Content="Save"
-                Padding="-5"
-                Click="MenuItemSave_Click"/>
+                    Margin="3,3,3,0"
+                    Grid.Column="1"
+                    FontSize="18"
+                    Content="Save as..."
+                    Padding="-5"
+                    Click="SaveasButtonEvent" 
+                    Height="29" 
+                    VerticalAlignment="Top">
+            </Button>
         </Grid>
     </Grid>
 </Window>

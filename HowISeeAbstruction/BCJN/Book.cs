@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HowISeeAbstruction.BCJN
+﻿namespace HowISeeAbstruction.BCJN
 {
     class Book : PaperCollection
     {
@@ -14,9 +8,6 @@ namespace HowISeeAbstruction.BCJN
             FontStyle = "Italian";
         }
 
-        public override int PageCount()
-        {
-            return WordCount / 500; // It's just an example
-        }
+        public override int PageCount() => WordCount / 500; // It's just an example
     }
 }

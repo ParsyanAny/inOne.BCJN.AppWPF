@@ -6,25 +6,27 @@ namespace InOne.BCJN.Application.BCJN
     public abstract class Paper : IReadable
     {
         public int WordCount { get; set; }
+        public string Text { get; set; }
+
         public class Sizes
         {
             public int Heigth { get; set; }
             public int Width { get; set; }
         }
+
         public abstract int PageCount();
 
-        
-        protected const string filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
         public string Read()
         {
+            OpenFileDialog opFD = new OpenFileDialog();
             string fileContent = string.Empty;
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.InitialDirectory = "c:\\";
-            dlg.Filter = filter;
-            dlg.RestoreDirectory = true;
-            if (dlg.ShowDialog() == true)
+            string filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            opFD.Filter = filter;
+            opFD.InitialDirectory = "c:\\";
+            opFD.RestoreDirectory = true;
+            if (opFD.ShowDialog() == true)
             {
-                Stream fileStream = dlg.OpenFile();
+                Stream fileStream = opFD.OpenFile();
 
                 using (StreamReader reader = new StreamReader(fileStream))
                 {
