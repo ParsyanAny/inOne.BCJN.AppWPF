@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="ReadWrite" 
         Height="450" Width="800"
-        x:Name="MyMainWindow">
+        x:Name="MyMainWindow"
+        Icon="pack://application:,,,/Resources/icon.ico"
+        >
     <Grid>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
