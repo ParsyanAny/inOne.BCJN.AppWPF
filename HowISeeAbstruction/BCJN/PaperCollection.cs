@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HowISeeAbstruction.BCJN
+namespace HowISeeAbstraction.BCJN
 {
     public abstract class PaperCollection : IReadable
     {

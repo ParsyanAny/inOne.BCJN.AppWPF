@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InOne.BCJN.AppWPF", "InOne.BCJN.Application\InOne.BCJN.AppWPF.csproj", "{EAD9B175-F388-4DF3-A92E-E357E12AC3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowISeeAbstruction", "HowISeeAbstruction\HowISeeAbstruction.csproj", "{41AF9A75-DEB2-4055-BE61-70CB267F00DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowISeeAbstraction", "HowISeeAbstruction\HowISeeAbstraction.csproj", "{41AF9A75-DEB2-4055-BE61-70CB267F00DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

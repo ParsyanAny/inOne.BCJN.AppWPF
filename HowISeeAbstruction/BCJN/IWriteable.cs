@@ -1,4 +1,4 @@
-﻿namespace HowISeeAbstruction.BCJN
+﻿namespace HowISeeAbstraction.BCJN
 {
     interface IWriteable
     {

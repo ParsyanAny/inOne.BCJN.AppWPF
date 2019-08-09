@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HowISeeAbstruction.BCJN
+namespace HowISeeAbstraction.BCJN
 {
     class NoteBook : PaperCollection, IWriteable
     {
@@ -12,7 +12,7 @@ namespace HowISeeAbstruction.BCJN
         public override int PageCount() => WordCount / 400;
         public bool Write()
         {
-            throw new NotImplementedException();// You can see how I Implementated it in WPF in next (general) project
+            throw new NotImplementedException();// You can see how I implementated it in WPF in next (general) project
         }
     }
 }

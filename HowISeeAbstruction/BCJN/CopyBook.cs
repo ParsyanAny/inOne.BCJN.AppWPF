@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HowISeeAbstruction.BCJN
+namespace HowISeeAbstraction.BCJN
 {
     class CopyBook : PaperCollection, IWriteable
     {
@@ -12,7 +12,7 @@ namespace HowISeeAbstruction.BCJN
         }
         public bool Write()
         {
-            throw new NotImplementedException(); // You can see how I Implemented it in WPF in next (general) project
+            throw new NotImplementedException(); // You can see how I implemented it in WPF in next (general) project
         }
     }
 }
